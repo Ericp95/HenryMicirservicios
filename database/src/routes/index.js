@@ -24,8 +24,8 @@ router.get("/:model/:id", modelValidate, async(req,res)=>{
 router.post("/:model", modelValidate, async(req,res)=>{
 
     const{model}=req.params;
-    const{_id,name}=req.body;
-    const response= await store[model].insert({_id,name});//esto funciona pero es provisional creo...
+    
+    const response= await store[model].insert(req.body);//esto funciona pero es provisional creo...
     res.status(200).json(response);
 });
 
