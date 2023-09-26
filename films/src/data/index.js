@@ -9,7 +9,7 @@ module.exports={
        const film=await axios.get("http://database:8004/Film")
        return film.data 
 
-      },
+      }, 
 
 
       filmID: async (id) => {//trae por id character
