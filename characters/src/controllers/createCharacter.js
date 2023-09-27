@@ -1,5 +1,5 @@
 const data = require("../data");
-const response=require("../utils");
+const {response}=require("../utils");
 
 module.exports=async(req,res)=>{
 
