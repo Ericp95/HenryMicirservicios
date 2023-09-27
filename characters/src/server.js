@@ -7,9 +7,9 @@ server.use(morgan("dev"));
 
 server.use(express.json());
 
-//server.use(require("./routes"));
+server.use(require("./routes"));
 
-server.use("/characters", require('./routes'))
+//server.use("/characters", require('./routes'))
 
 server.use("*",(req,res)=>{//sino encuentra ningun endpoint da el 404
     res.status(404).send("not found")
