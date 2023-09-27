@@ -2,7 +2,7 @@ const {ClientError}=require("../utils/errors")
 
 module.exports=(req,res,next)=>{
 
-    const{name}=req.body
+    const{name}=req.params
 
     if(name) return next();
 
