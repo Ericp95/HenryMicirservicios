@@ -25,7 +25,7 @@ planetSchema.statics.get= async function(id){
 }
 
 planetSchema.statics.insert= async function(planet){
-    return await this.find(planet)
+    return await this.create(planet)
 }
 
 
