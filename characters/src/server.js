@@ -21,7 +21,7 @@ server.use((err,req,res,next)=>{
     error:true,
     message:err.message
    });
-})//arreglarlo que no andaa!!
+})
 
 
 module.exports=server;
