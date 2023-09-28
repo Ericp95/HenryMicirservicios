@@ -9,5 +9,5 @@ module.exports= async(req,res)=>{
     
 
     //res.status(200).json(films)
-    //response(res,200,films)
+    response(res,200,films)
 } 
